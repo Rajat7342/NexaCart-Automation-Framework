@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NexaCart — Product</title>
+
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <!-- Background -->
+    <div class="background">
+        <div class="glow glow-one"></div>
+        <div class="glow glow-two"></div>
+        <div class="grid"></div>
+    </div>
+
+    <!-- Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+
+        <div class="brand" onclick="goBack()">
+            <div class="brand-icon">N</div>
+            <span>Nexa<span>Cart</span></span>
+        </div>
+
+        <div class="nav-actions">
+
+            <button class="nav-button" id="cartButton">
+                🛒
+                <span id="cartCount">0</span>
+            </button>
+
+            <button class="nav-button" id="wishlistButton">
+                ♡
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN PRODUCT -->
+    <main class="product-page">
+
+        <!-- Back -->
+        <button class="back-button" onclick="goBack()">
+            ← Back to Shop
+        </button>
+
+
+        <section class="product-container">
+
+            <!-- LEFT : IMAGE -->
+            <div class="product-gallery">
+
+                <div class="image-glow"></div>
+
+                <div class="main-image-card">
+
+                    <span class="category-badge" id="productCategory">
+                        Electronics
+                    </span>
+
+                    <div class="product-icon" id="productIcon">
+                        💻
+                    </div>
+
+                    <div class="floating-orb orb-one"></div>
+                    <div class="floating-orb orb-two"></div>
+
+                </div>
+
+                <div class="gallery-dots">
+                    <span class="gallery-dot active"></span>
+                    <span class="gallery-dot"></span>
+                    <span class="gallery-dot"></span>
+                    <span class="gallery-dot"></span>
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT : DETAILS -->
+            <div class="product-details">
+
+                <div class="product-category" id="detailCategory">
+                    ELECTRONICS
+                </div>
+
+                <h1 id="productName">
+                    Pro Laptop
+                </h1>
+
+                <div class="rating">
+
+                    <span class="stars">★★★★★</span>
+
+                    <span id="rating">
+                        4.8
+                    </span>
+
+                    <span class="reviews">
+                        · 128 reviews
+                    </span>
+
+                </div>
+
+
+                <div class="price-row">
+
+                    <span class="price" id="productPrice">
+                        $1299
+                    </span>
+
+                    <span class="old-price" id="oldPrice">
+                        $1499
+                    </span>
+
+                    <span class="discount">
+                        13% OFF
+                    </span>
+
+                </div>
+
+
+                <p class="description" id="productDescription">
+                    Experience next-generation performance with a premium
+                    design built for work, creativity and entertainment.
+                </p>
+
+
+                <!-- STOCK -->
+                <div class="stock">
+
+                    <span class="stock-dot"></span>
+
+                    <span>
+                        In Stock
+                    </span>
+
+                    <span class="stock-text">
+                        · Ready to ship
+                    </span>
+
+                </div>
+
+
+                <!-- QUANTITY -->
+                <div class="quantity-section">
+
+                    <span class="section-label">
+                        Quantity
+                    </span>
+
+                    <div class="quantity-control">
+
+                        <button id="minusButton">
+                            −
+                        </button>
+
+                        <span id="quantity">
+                            1
+                        </span>
+
+                        <button id="plusButton">
+                            +
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ACTIONS -->
+                <div class="product-actions">
+
+                    <button
+                        class="add-cart-button"
+                        id="addCartButton"
+                    >
+                        🛒 Add to Cart
+                    </button>
+
+                    <button
+                        class="buy-button"
+                        id="buyButton"
+                    >
+                        Buy Now
+                    </button>
+
+                    <button
+                        class="wishlist-button"
+                        id="productWishlist"
+                    >
+                        ♡
+                    </button>
+
+                </div>
+
+
+                <!-- FEATURES -->
+                <div class="features">
+
+                    <div class="feature">
+
+                        <span class="feature-icon">
+                            🚚
+                        </span>
+
+                        <div>
+                            <strong>Free Delivery</strong>
+                            <small>On orders over $50</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <span class="feature-icon">
+                            ↩️
+                        </span>
+
+                        <div>
+                            <strong>Easy Returns</strong>
+                            <small>30-day return policy</small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="feature">
+
+                        <span class="feature-icon">
+                            🔒
+                        </span>
+
+                        <div>
+                            <strong>Secure Payment</strong>
+                            <small>100% protected checkout</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- EXTRA INFORMATION -->
+        <section class="product-info">
+
+            <div class="info-card">
+
+                <span>01</span>
+
+                <h3>Premium Quality</h3>
+
+                <p>
+                    Carefully selected products designed to deliver
+                    reliability, performance and a premium experience.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>02</span>
+
+                <h3>Fast Shipping</h3>
+
+                <p>
+                    Get your order delivered quickly with reliable
+                    shipping and real-time order tracking.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span>03</span>
+
+                <h3>Secure Shopping</h3>
+
+                <p>
+                    Your personal information and payments are protected
+                    throughout your shopping experience.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+
+        <div class="toast-icon">
+            ✓
+        </div>
+
+        <div>
+            <strong id="toastTitle">
+                Added to Cart
+            </strong>
+
+            <p id="toastMessage">
+                Product added successfully.
+            </p>
+        </div>
+
+    </div>
+
+
+    <script src="product.js"></script>
+
+</body>
+</html>

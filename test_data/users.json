@@ -1,0 +1,12 @@
+{
+    "valid_user": {
+        "name": "Rajat",
+        "email": "rajat@example.com",
+        "password": "Test@123"
+    },
+    "new_user": {
+        "name": "Test User",
+        "email": "testuser@example.com",
+        "password": "Test@123"
+    }
+}

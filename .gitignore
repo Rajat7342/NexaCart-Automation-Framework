@@ -1,0 +1,23 @@
+
+# Python virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test reports and logs
+reports/
+.pytest_cache/
+
+# Local database
+nexacart.db
+*.sqlite3
+
+# Environment variables and secrets
+.env
+.env.*
+
+# IDE settings
+.vscode/
